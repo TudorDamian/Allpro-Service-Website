@@ -1,6 +1,5 @@
-import React, {useState, useCallback, memo} from 'react';
-import {TextField, Button, Typography, Grid, Box, FormHelperText} from '@mui/material';
-import {DescriereSectiuneSX} from "../App.styles";
+import React, { useState, useCallback, memo } from 'react';
+import { TextField, Button, Typography, Grid, Box, FormHelperText } from '@mui/material';
 import _ from 'lodash';
 
 const ContactForm = memo(() => {
@@ -20,81 +19,29 @@ const ContactForm = memo(() => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Handle form submission logic (sending data to your backend or similar)
         console.log('Form data:', formData);
-    };
-
-    const textFieldProps = {
-        sx: {
-            '& .MuiOutlinedInput-root': {
-                '&:hover fieldset': {
-                    borderColor: '#222831',
-                },
-                '&.Mui-focused fieldset': {
-                    borderColor: '#00ADB5',
-                },
-            },
-            '& .MuiFormLabel-root': {
-                color: '#222831',
-                '&.Mui-focused': {
-                    color: '#00ADB5',
-                },
-            },
-        },
+        event.target.submit();
     };
 
     return (
-        <Box sx={{ width: '100%', margin: '20px auto' }}> {/* Adjust width as needed */}
-            <Typography variant="h5" gutterBottom color="text.primary" style={DescriereSectiuneSX}>
+        <Box sx={{ width: '100%', margin: '20px auto' }}>
+            <Typography variant="h5" gutterBottom color="text.primary">
                 Contactează-ne
             </Typography>
-            <form onSubmit={handleSubmit}>
+            <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" /> {/* This hidden field is necessary for Netlify */}
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        <TextField
-                            {...textFieldProps}
-                            fullWidth
-                            label="Nume"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
+                        <TextField fullWidth label="Nume" name="name" value={formData.name} onChange={handleChange} required />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField
-                            {...textFieldProps}
-                            fullWidth
-                            label="Email"
-                            name="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
+                        <TextField fullWidth label="Email" name="email" type="email" value={formData.email} onChange={handleChange} required />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField
-                            {...textFieldProps}
-                            fullWidth
-                            label="Telefon"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                        />
+                        <TextField fullWidth label="Telefon" name="phone" value={formData.phone} onChange={handleChange} />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField
-                            {...textFieldProps}
-                            fullWidth
-                            label="Mesaj"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            multiline
-                            rows={4}
-                            required
-                        />
+                        <TextField fullWidth label="Mesaj" name="message" value={formData.message} onChange={handleChange} multiline rows={4} required />
                         <FormHelperText>* - Câmpuri obligatorii</FormHelperText>
                     </Grid>
                     <Grid item xs={12}>

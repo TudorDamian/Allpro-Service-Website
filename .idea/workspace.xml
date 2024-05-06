@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5591a2f3-329d-42ba-bc85-7e846b9fbc37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Allpro Service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/ContactForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/ContactForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +23,12 @@
     &quot;assignee&quot;: &quot;TudorDamian&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/FreeGuci/Allpro.git&quot;,
-    &quot;accountId&quot;: &quot;1a71f8ca-ab78-4438-966b-e03d9eb0264f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TudorDamian/Allpro-Service-Website.git",
+    "accountId": "1a71f8ca-ab78-4438-966b-e03d9eb0264f"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -77,6 +74,7 @@
       <workItem from="1714924935810" duration="1294000" />
       <workItem from="1715006433170" duration="3261000" />
       <workItem from="1715014135534" duration="40000" />
+      <workItem from="1715014435769" duration="3455000" />
     </task>
     <servers />
   </component>
